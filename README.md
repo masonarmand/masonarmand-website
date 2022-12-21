@@ -1,5 +1,5 @@
 # My Portfolio Website
-Website showcasing my professional programming portfolio.
+Website showcasing my programming portfolio.
 <br>
 <a href='https://masonarmand.com'>masonarmand.com</a>
 <br>
