@@ -1,0 +1,17 @@
+@media (pointer:none), (pointer:coarse), (max-width: 800px) {
+    body {
+      background: var(--bg) !important;  
+    }
+    main, .project-card, body {
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+    
+    main {
+        padding: 0 !important;  
+    }
+    
+    .project-card img, .project-card video {
+        width: 100% !important;
+    }
+}
