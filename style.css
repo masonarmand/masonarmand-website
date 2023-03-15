@@ -1,0 +1,87 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: chanticleer, serif;
+}
+
+@font-face {
+    font-family: chanticleer;
+    src: url("/fnt/chanticleer.otf");
+
+    font-display: swap;
+}
+
+
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul { padding: 0; }
+ul li { list-style: none; }
+p { text-align: justify; }
+a { color: #2e76ab; }
+
+.desc { font-size: 18px; }
+
+.project li {
+    display: flex;
+}
+
+.project li .title {
+    order: 1;
+    font-weight: bold;
+}
+
+.project li .link {
+    order: 3;
+}
+
+.project li::after {
+    background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+    background-position: bottom;
+    background-size: 1ex 4.5px;
+    background-repeat: space no-repeat;
+    content: "";
+    flex-grow: 1;
+    height: 1em;
+    order: 2;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+}
+
+#title {
+    text-align: center;
+}
+
+#title img {
+    width: 100%;
+}
+
+#title h1 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+@media not (min-width: 720px), (max-width: 800px) and (pointer:none), (pointer:coarse) {
+    main { width: 100% !important; }
+    #title h1 { font-size: 2rem; }
+    #links span { display: none; }
+    #links { flex-direction: column; align-items: center; }
+}
