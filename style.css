@@ -37,6 +37,10 @@ p { text-align: justify; }
   margin-left: 20px;
 }
 
+.project {
+  margin-left: 20px
+}
+
 .project div {
   display: flex;
 }
