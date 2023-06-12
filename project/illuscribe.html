@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mason Armand</title>
+  <meta name="description" content="Computer Science Major, Programmer, Hobbyist Game Developer">
+  <meta name="keywords" content="web development, websites, php, java, sql, c, linux, mason armand, portfolio, programming, computer science">
+
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <main>
+    <a href="/">&lt;--- home</a>
+    <br><br>
+    <header id="project-title">
+      <img src="/img/illuscribe.png" alt="Illuscribe screenshot">
+      <h1>Illuscribe</h1>
+    </header>
+
+    <section id="project-desc">
+      <p>
+        Present slideshows from plaintext files. Illuscribe is a simple program written in C using the Xlib
+        and stb_image libraries. It parses plaintext files and renders them as presentations. Here is an
+        example of the syntax for creating a slideshow:
+      </p>
+<code><pre>
+template: "my-template"
+    box: "title-box", stack-vertical, align-center
+    box: "content-box", stack-horizontal, align-left
+end
+
+slide: "slide1"
+    uses: "my-template"
+
+    define: "title-box"
+        text: title, "Hello World!"
+    end
+
+    define: "content-box"
+        text: normal, "This is some text."
+        image: "yourimage.png"
+    end
+end
+</pre></code>
+      <ul class="link-list">
+        <li><a href="https://github.com/masonarmand/illuscribe" target="_blank">View Source Code</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <br><br>
+
+  <footer>
+    <img src="/img/rat.png" alt="">
+  </footer>
+</body>
+</html>
