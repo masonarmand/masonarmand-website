@@ -8,6 +8,10 @@ body { font-family: chanticleer, serif; }
   font-display: swap;
 }
 
+iframe {
+  margin-top: 18px;
+}
+
 pre {
   border-radius: 10px;
   background-color: #f3f3f3f3;
